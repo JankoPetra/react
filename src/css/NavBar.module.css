@@ -1,0 +1,65 @@
+nav {
+    height: 70px;
+    display: flex;
+    justify-content: end;
+
+    & ul {
+        box-sizing: border-box;
+        padding: 16px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        & li {
+            list-style: none;
+
+            & a {
+                color: black;
+                text-decoration: none;
+                padding: 16px;
+            }
+        }
+    }
+}
+
+.hamburger_menu_button {
+    border: none;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 16px;
+    display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger_menu_button {
+        display: block !important;
+    }
+
+    nav {
+        ul {
+            background-color: white;
+            z-index: 1000;
+            position: absolute;
+            top: 70px;
+            width: 100%;
+            /* kiszámítjuk a képernyő magasság 
+            mínusz navigáció sáv magassága*/
+            height: calc(100vh - 70px);
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 32px;
+            transition: transform 1s;
+            &.open {
+                /* display: flex !important; */
+                transform: translateX(0%);
+            }
+
+            &.closed {
+                transform: translateX(100%);
+                /* display: none !important; */
+            }
+        }
+    }
+}

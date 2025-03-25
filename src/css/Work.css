@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Shrikhand&display=swap');
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.featured-works {
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+.featured-works h2{
+    font-weight: 800;
+    margin-left: 10px;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-top: 60px;
+}
+    
+.work {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+    
+.work img {
+    width: 25%;
+    height: 25%;
+    margin-right: 15px;
+    border-radius: 5%;
+}
+    
+.work-info h3 {
+    margin: 0;
+}
+    
+.work-meta {
+    color: #555;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.meta-num{
+    margin-right: 20px;
+    border-radius: 30px;
+    background-color: #041855;
+    color: white;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+ 
+.work-description {
+    font-size: 14px;
+    color: #444;
+}

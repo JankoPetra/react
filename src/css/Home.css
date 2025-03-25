@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Shrikhand&display=swap');
+
+
+
+
+.container {
+     max-width: 900px;
+     margin: 0 auto;
+     padding: 20px;
+     font-family: Arial, sans-serif;
+}
+     
+    
+.profile h1{
+     font-size: 50px;
+}
+
+.profile-text {
+     text-align: left;
+     margin-bottom: 34px;
+     width: 60%;
+}
+.profile-text p{
+     color: #3a3535;
+}
+     
+.profile-image {
+     /* width: 100px;
+     height: 100px; */
+     border-radius: 50%;
+     width: 22%;
+     height: 12%;
+     float: right;
+     margin-right: 5%;
+}
+     
+.resume-button {
+     background-color: #f56772;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 1px;
+     cursor: pointer;
+     margin-top: 10px;
+     font-weight: bold;
+}
+     
+.resume-button:hover {
+     background-color: #d62839;
+}
+     
+     
+.recent-posts {
+     margin-bottom: 40px;
+     background-color: #d8e2f85e;
+}
+     
+.section-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.section-header h2{
+     font-weight: 100;
+     margin-left: 40px;
+     font-size: 20px;
+}
+     
+.section-header a {
+     color: #1d4ed8;
+     text-decoration: none;
+     margin-right: 30px;
+}
+     
+.posts {
+     display: flex;
+     /* margin-top: 10px; */
+}
+     
+.post {
+     border: none;
+     padding: 20px;
+     border-radius: 5px;
+     flex: 1;
+     margin: 5px 30px 30px 30px;
+     background-color: white;
+}
+.post p{
+    color: #3a3535;
+}
+     
+     
+.featured-works {
+     margin-bottom: 40px;
+     margin-left: 40px;
+}
+.featured-works h2{
+     font-weight: 100;
+     margin-left: 10px;
+     font-size: 20px;
+     margin-bottom: 50px;
+     margin-top: 60px;
+}
+     
+.work {
+     display: flex;
+     align-items: center;
+     margin-top: 15px;
+     border-bottom: 1px solid #ddd;
+     padding-bottom: 15px;
+}
+     
+.work img {
+     width: 25%;
+     height: 25%;
+     margin-right: 15px;
+     border-radius: 5%;
+}
+     
+.work-info h3 {
+     margin: 0;
+}
+     
+.work-meta {
+     color: #555;
+     font-size: 14px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+}
+.meta-num{
+     margin-right: 20px;
+     border-radius: 30px;
+     background-color: #041855;
+     color: white;
+     font-weight: bold;
+     padding: 4px 8px;
+}
+  
+.work-description {
+     font-size: 14px;
+     color: #444;
+}
+     
+     
+.footer {
+     text-align: center;
+     margin-top: 40px;
+     font-size: 14px;
+     color: #777;
+}
+     
+@media (max-width: 768px) {
+     .container {
+          padding: 15px;
+     }
+          
+     .profile{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }   
+     .profile h1{
+          font-size: 40px;
+          text-align: center;
+     }
+     
+     .profile-text {
+          text-align: center;
+     }
+     .profile-text p{
+          text-align: center;
+     }
+          
+     .profile-image {
+          width: 30%;
+          height: 30%;
+
+     }
+          
+     
+     
+          
+     .section-header a {
+          display: none;
+     }
+          
+     .posts {
+          display: flex;
+          flex-direction: column;
+     }
+          
+     .post {
+          margin-bottom: 10px;
+         
+     }
+
+
+
+     .featured-works {
+          margin-left: 0px;
+     }
+          
+     .featured-works h2{
+          text-align: center;
+          margin-left: 0px;
+     } 
+
+     .work {
+          display: block;
+          text-align: center;
+          padding-bottom: 10px;
+     }
+          
+     .work img {
+          margin: 0 auto;
+          display: block;
+          width: 100%;
+          height: 30%;
+     }
+          
+     .work-info {
+          margin-top: 10px;
+     }
+
+     .work-info h3{
+          text-align: left;
+     }
+     .work-description{
+          text-align: left;
+     }
+          
+          
+     .footer {
+          font-size: 12px;
+     }
+}
